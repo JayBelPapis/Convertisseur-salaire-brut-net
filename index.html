@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcul de salaire</title>
+    <script defer src="https://unpkg.com/vue@next"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="root">
+        <div class="tableau">
+            <h1>Convertisseur de salaire de brut à net</h1>
+            <div class="annuel">
+                <div>
+                    <label for="sba">Salaire brut annuel :</label><br><br>
+                    <input @input="saisieSBA" type="text" id="sba" name="sba" >€
+                </div>
+                <div class="annuelNet">
+                    <label for="sna">Salaire net annuel :</label>
+                    <p class="netAnuuel">{{sna}} €</p>
+                </div>
+            </div>
+            <div class="mensuel">
+                <div>
+                    <label for="sbm">Salaire brut mensuel :</label>
+                    <p class="brutMensuel">{{sbm}} € </p>
+                </div>
+                <div class="mensuelNet">
+                    <label for="snm">Salaire net mensuel :</label>
+                    <p class="netMensuel">{{snm}} €</p>
+                </div>
+            </div>
+            <label for="status"> Cadre <input @input="statutCadre" type="checkbox" name=status id="status" class="status"></label>
+            
+
+        </div>
+    </div>
+
+</body>
+
+</html>

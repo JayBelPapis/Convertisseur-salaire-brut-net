@@ -1,0 +1,27 @@
+.tableau{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.annuel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.mensuel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px;
+    
+}
